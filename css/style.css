@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+body {
+	background: #f1fbff;
+}
+.section-padding {
+	padding: 100px 0;
+}
+/* header-area starts here  */
+.navbar {
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    padding:13px 13px;
+    display: block;
+    color:#000;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 550;
+    transition: all 0.4s ease;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color:orange;
+}
+
+/* header-area ends here  */
+
+/* banner-section start here in carousel-slider  */
+.carousel .carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carosuel,.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+}
+.carosuel,.carousel-caption h5{
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+}
+.carosuel,.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+
+/* banner-section end here in carousel-slider  */
+
+/* services section start here  */
+.services .card {
+    margin-top: 35px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.services .card .card-body .fa-laptop,.fa-journal-whills,.fa-internet-explorer{
+    font-size: 50px;
+    margin: .5rem;
+}
+
+.services .card .card-body .card-title{
+    font-size: 1.75rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+.services .card .card-body .lend{
+    font-size: 1.25rem;
+}
+
+/* services section end here  */
+
+/* our-project section start here  */
+.our-project .card {
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+    margin-top: 35px;
+}
+.our-project .card .card-body .card-title{
+    font-size: 1.75rem;
+}
+
+.our-project .card .card-body .lend{
+    font-size: 1.25rem;
+}          
+/* our-project section end here  */
+
+/* our-team section start here  */
+.our-team .card{
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+    margin-top: 35px;
+}
+.our-team .card .card-body .card-text{
+    text-align: justify;
+}
+.our-team .card .card-body .socials .fa-twitter,.fa-facebook,.fa-linkedin,.fa-instagram{
+    font-size: 20px;
+    
+}
+
+/* our-team section end here  */
+
+
+/* Responsive webiste design  */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		bottom: 370px;
+	}
+	.carousel-caption p {
+		width: 100%;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+	.img-area img {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.carousel-caption {
+		bottom: 125px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 12px;
+	}
+	.about-content {
+		padding-top: 50px;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+}
